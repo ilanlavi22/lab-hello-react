@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  position: relative;
+  display: flex;
+  background: #121620;
+  padding: 1rem 5rem;
+  align-items: center;
+  height: 80px;
+  z-index: 1;
+
+  .nav-icon {
+    margin-left: auto;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  background: #1f2535;
+  padding: 1rem 5rem;
+  color: white;
+  justify-content: center;
+
+  h1 {
+    font-size: 6rem;
+    max-width: 600px;
+    line-height: 1;
+  }
+  p {
+    font-size: 2rem;
+    padding-block: 2rem;
+    max-width: 600px;
+  }
+  button {
+    border: none;
+    align-self: flex-start;
+    padding: 1.5rem 4rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+main {
+  padding: 1rem 5rem;
+}
+.react-features {
+  display: flex;
+  margin-block: 150px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .feature {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    align-items: flex-start;
+
+    img {
+      margin-left: -20px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .react-features .feature {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      margin-left: 0;
+    }
+  }
+}

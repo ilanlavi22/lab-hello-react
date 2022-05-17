@@ -31,11 +31,9 @@ We just learned the basics of React and JSX. We saw how to create a new React ap
 
 Let's get this party started! First, you will need to create a new React app.
 
-Navigate to the root folder of the LAB. When you're in the root folder, use the Create React App (CRA) package to create a new React project. 
+Navigate to the root folder of the LAB. When you're in the root folder, use the Create React App (CRA) package to create a new React project.
 
 Once you have created the app, navigate to the root folder of the app. From here, run the app in the development mode and open it in the browser.
-
-
 
 You can reference the CRA Documentation and the Getting Started page here: [Create React App - Getting Started](https://create-react-app.dev/docs/getting-started).
 
@@ -50,9 +48,7 @@ Now that you have created the app let's clean up the `App.js` a bit. Remove the 
 import './App.css';
 
 function App() {
-  return (
-    <div className="App"></div>
-  );
+  return <div className="App"></div>;
 }
 export default App;
 ```
@@ -61,7 +57,7 @@ export default App;
 
 ### Iteration 3 | Download the assets
 
-To create the landing page we will need few images. Inside of the `src/` folder create a new folder named `images`. The folder should be nested in the following way `src/images/`. 
+To create the landing page we will need few images. Inside of the `src/` folder create a new folder named `images`. The folder should be nested in the following way `src/images/`.
 
 Next, download the following images and save them in the `src/images/` folder:
 
